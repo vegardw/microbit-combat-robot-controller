@@ -17,4 +17,11 @@ loops.everyInterval(100, function () {
             radio.sendValue("drive", 0)
         }
     }
+    if (input.buttonIsPressed(Button.B)) {
+        radio.sendValue("weapon", 1)
+    } else if (input.buttonIsPressed(Button.A)) {
+        radio.sendValue("weapon", 2)
+    } else {
+        radio.sendValue("weapon", 0)
+    }
 })
